@@ -44,8 +44,14 @@
 
         %div.collapse.navbar-collapse#navbar-collapse-1
           %ul.nav.navbar-nav.navbar-right
-            %li
-              %a(href="#") Login
+            - if current_user
+              %li
+                %a(href="/logout") Logout
+            - else
+              %li
+                %a(href="/signup") Signup
+              %li
+                %a(href="/login") Login
 
     .container
       #page-wrapper

@@ -37,6 +37,7 @@ class App < Sinatra::Base
   # Routes
   use Routes::ApplicationRoutes
   use Routes::UserRoutes
+  use Routes::AuthRoutes
 
   # Set 404 page template
   not_found do
