@@ -4,4 +4,4 @@
 #   timeout: 5000
 
 development:
-  url: <%= DATABASE_URL %>
+  url: <%= ENV['DATABASE_URL'] %>
